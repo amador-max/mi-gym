@@ -24,7 +24,7 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          GITHUB_PAGES: 'true'
+          GITHUB_PAGES: "true"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
