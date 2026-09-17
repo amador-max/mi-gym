@@ -510,7 +510,7 @@ export const goals: {
   },
   {
     id: "muscular",
-    title: "Musculoso natural",
+    title: "Hipertrofia y estética",
     subtitle: "Hipertrofia progresiva",
     description:
       "Tres días de cuerpo completo con énfasis en espalda, pecho, hombros y brazos sin descuidar piernas.",

@@ -45,13 +45,13 @@ const demonstrations: Record<string, string> = {
   "triceps.svg":
     "https://musclewiki.com/exercise/dumbbell-seated-overhead-tricep-extension",
   "lateral-raise.svg":
-    "https://www.youtube.com/results?search_query=elevaciones+laterales+mancuernas+t%C3%A9cnica",
+    "https://musclewiki.com/exercise/dumbbell-lateral-raise",
   "calf-raise.svg":
-    "https://www.youtube.com/results?search_query=elevaci%C3%B3n+pantorrillas+de+pie+t%C3%A9cnica",
+    "https://musclewiki.com/exercise/dumbbell-calf-raise",
   "hammer-curl.svg":
-    "https://www.youtube.com/results?search_query=curl+martillo+mancuernas+t%C3%A9cnica",
+    "https://musclewiki.com/exercise/dumbbell-hammer-curl",
   "lying-triceps.svg":
-    "https://www.youtube.com/results?search_query=extensi%C3%B3n+tr%C3%ADceps+acostado+mancuernas+t%C3%A9cnica",
+    "https://musclewiki.com/exercise/dumbbell-skullcrusher",
 };
 const youtubeQueries: Record<string, string> = {
   "chest-row.svg": "remo pecho apoyado banco inclinado mancuernas técnica",
