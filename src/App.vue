@@ -45,7 +45,16 @@ const timerRunning = ref(false)
 let interval: ReturnType<typeof setInterval> | undefined
 const currentDay = computed(() => days.find(day => day.id === selectedDay.value))
 const total = computed(() => currentDay.value?.exercises.reduce((sum, ex) => sum + ex.sets, 0) ?? 0)
-const done = computed(() => currentDay.value?.exercises.reduce((sum, ex) => sum + Array.from({ length: ex.sets }, (_, i) => completed.value[`${ex.id}-${i}`] ? 1 : 0).reduce((a, b) => a + b, 0), 0) ?? 0)
+
+const done = computed(() =>
+  currentDay.value?.exercises.reduce((sum, ex) => {
+    return sum + Array.from(
+      { length: ex.sets },
+      (_, i) => completed.value[`${ex.id}-${i}`] ? 1 : 0
+    ).reduce<number>((a, b) => a + b, 0)
+  }, 0) ?? 0
+)
+
 const percentage = computed(() => total.value === 0 ? 0 : Math.round(done.value / total.value * 100))
 const timerLabel = computed(() => `${Math.floor(secondsLeft.value / 60).toString().padStart(2, '0')}:${(secondsLeft.value % 60).toString().padStart(2, '0')}`)
 function openDay(day: number) {
