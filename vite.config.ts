@@ -3,5 +3,5 @@ import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
   plugins: [vue()],
-  base: "/gym-3-dias/",
+  base: "/mi-gym/",
 });
